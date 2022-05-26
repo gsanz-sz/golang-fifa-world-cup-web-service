@@ -6,7 +6,7 @@ import (
 
 // RootHandler returns an empty body status code
 func RootHandler(res http.ResponseWriter, req *http.Request) {
-
+	res.WriteHeader(http.StatusNoContent)
 }
 
 // ListWinners returns winners from the list
